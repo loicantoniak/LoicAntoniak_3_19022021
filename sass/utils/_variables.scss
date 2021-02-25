@@ -1,13 +1,31 @@
-/*************************************/
-/*             VARIABLES             */
-/*************************************/
-
+// colors
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 $color-white: #fff;
+$color-text: #000;
 
+// font
+$text-font: "Roboto";
+$heading-font: "Shrikhand";
+
+// breakpoints
 $breakpoints: (
   tablet: 768px,
   desktop: 992px,
-  largeScreen:1200px,
+  largeScreen: 1200px,
 );
 
+// spacing
+$layout-margin: 1rem;
 
+$shadow-size: 3px;
+$shadow-blur: 6px;
+
+$padding-button: 0.8rem 1.1rem;
+$large-padding: 2rem;
+$medium-padding: 1.5rem;
+$small-padding: 1.2rem;
+
+$line-height: 1.1rem;
+$border-radius: 1.2rem;

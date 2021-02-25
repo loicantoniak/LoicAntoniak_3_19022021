@@ -1,0 +1,27 @@
+.btn {
+  @include shadow;
+  @include font-body;
+  border: none;
+  padding: $padding-button;
+  outline: none;
+  cursor: pointer;
+  &-primary {
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
+    color: $color-white;
+    border-radius: 25px;
+    &:hover {
+      background: linear-gradient(
+        170deg,
+        lighten($color-secondary, 5%),
+        lighten($color-primary, 5%)
+      );
+    }
+  }
+
+  &-secondary {
+    border-radius: 10px;
+    &:hover {
+      background-color: lighten($color-primary, 35);
+    }
+  }
+}

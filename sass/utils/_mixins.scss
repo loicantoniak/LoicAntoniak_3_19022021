@@ -1,11 +1,31 @@
-/*************************************/
-/*             MIXINS                */
-/*************************************/
-
 // Breakpoints
-
 @mixin breakpoint($screen) {
   @media screen and (min-width: map-get($map: $breakpoints, $key: $screen)) {
     @content;
   }
 }
+
+@mixin shadow(
+  $color: $color-white,
+  $size: $shadow-size,
+  $blur: $shadow-blur,
+  $pourcent: 15%
+) {
+  box-shadow: $size $size $blur darken($color, $pourcent);
+}
+
+@mixin backgroundColor($color: $color-white, $pourcent: 0) {
+  background-color: darken($color, $pourcent);
+}
+
+@mixin flexContent($align: center, $justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font-body {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
