@@ -1,0 +1,10 @@
+header {
+    @include flexContent;
+    @include backgroundColor;
+    @include shadow($pourcent: 30%, $blur: 5px);
+    height: $header-height;  
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
