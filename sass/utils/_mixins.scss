@@ -21,17 +21,17 @@
 }
 
 // Fonts
-@mixin font-body-large($size: 1.1rem) {
+@mixin font-body-large($size: 2rem) {
   font-weight: 700;
   font-size: $size;
 }
 
-@mixin font-body($size: 0.7rem) {
+@mixin font-body($size: 1.2rem) {
   font-weight: 600;
   font-size: $size;
 }
 
-@mixin font-body-small($size: 0.8rem) {
+@mixin font-body-small($size: 1.4rem) {
   font-weight: 300;
   font-size: $size;
 }

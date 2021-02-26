@@ -13,3 +13,9 @@ body {
 p {
   margin: 0;
 }
+
+a,
+a:active {
+  text-decoration: none;
+  color: $color-text;
+}

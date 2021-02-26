@@ -1,0 +1,34 @@
+figure {
+  @include shadow($pourcent: 10%, $blur: 5px);
+  background-color: $color-white;
+  border-radius: 15px;
+  margin: 0;
+  cursor: pointer;
+
+  .card__image {
+    height: 14rem;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+    }
+  }
+
+  figcaption {
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    line-height: $line-height;
+    .title_card {
+      @include font-body(1.5rem);
+    }
+    .subtitle_card {
+      @include font-body-small;
+    }
+  }
+}
