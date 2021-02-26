@@ -8,7 +8,7 @@
     <!-- FontAwesome script -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="description" content="" />
-    <title>OhMyFood !</title>
+    <title>ohmyfood ! - Accueil</title>
   </head>
   <body>
     <!-- header -->
@@ -33,9 +33,9 @@
         <p class="subtitle">
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <footer>
-          <button class="btn btn-primary">Explorer nos restaurants</button>
-        </footer>
+        <div class="presentation_footer">
+          <a href="#restaurant"><button class="btn btn-primary">Explorer nos restaurants</button></a>
+        </div>
       </section>
 
       <!-- step menu -->
@@ -61,10 +61,10 @@
       </section>
 
       <!-- restaurant -->
-      <section class="restaurant">
+      <section class="restaurant" id="restaurant">
         <p class="sectionTitle">Restaurants</p>
         <div class="card__container">
-          <a href="#">
+          <a href="./lapalettedugout.html">
             <figure>
               <div class="card__image">
                 <img
@@ -78,12 +78,12 @@
               </figcaption>
             </figure>
           </a>
-          <a href="#">
+          <a href="./lanoteenchantee.html">
             <figure>
               <div class="card__image">
                 <img
                   src="./public//images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="Photo de restaurant Jay Wennington"
+                  alt="Photo de restaurant la note enchantée"
                 />
               </div>
               <figcaption>
@@ -92,12 +92,12 @@
               </figcaption>
             </figure>
           </a>
-          <a href="#">
+          <a href="./alafrancaise.html">
             <figure>
               <div class="card__image">
                 <img
                   src="./public//images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="Photo de restaurant Jay Wennington"
+                  alt="Photo de restaurant A la française"
                 />
               </div>
               <figcaption>
@@ -106,12 +106,12 @@
               </figcaption>
             </figure>
           </a>
-          <a href="#">
-            <figure> 
+          <a href="./ledelicedessens.html">
+            <figure>
               <div class="card__image">
                 <img
                   src="./public//images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="Photo de restaurant Jay Wennington"
+                  alt="Photo de restaurant Le délice des sens"
                 />
               </div>
               <figcaption>
@@ -123,5 +123,18 @@
         </div>
       </section>
     </div>
+    <footer>
+      <p class="footer_title">ohmyfood</p>
+      <div>
+        <i class="fas fa-utensils"></i>
+        <a href="#">Proposer un restaurant</a>
+      </div>
+      <div>
+        <i class="fas fa-hands-helping"></i>
+        <a href="#">Devenir partenaire</a>
+      </div>
+      <a href="#">Mentions légales</a>
+      <a href="#">Contact</a>
+    </footer>
   </body>
 </html>

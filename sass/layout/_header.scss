@@ -1,10 +1,16 @@
 header {
-    @include flexContent;
-    @include shadow($pourcent: 17%, $blur: 5px);
-    background-color: $color-white;
-    height: $header-height;  
-    position: fixed;  
-    top: 0;
-    width: 100%;
-    z-index: 99;
+  @include flexContent;
+  @include shadow($pourcent: 17%, $blur: 5px);
+  background-color: $color-white;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  i {
+    position: absolute;
+    top: 1.2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+  }
 }

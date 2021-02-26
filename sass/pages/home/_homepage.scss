@@ -27,7 +27,7 @@
     color: $color-grey3;
     margin: 0.7rem 1.2rem;
   }
-  footer {
+  .presentation_footer {
     margin: 2.2rem 0;
   }
 }
@@ -43,6 +43,7 @@
 
 .restaurant {
   background-color: $color-grey1;
+  padding-bottom: $header-height;
   .card__container {
     display: grid;
     grid-gap: 1rem;
