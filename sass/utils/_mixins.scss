@@ -9,13 +9,9 @@
   $color: $color-white,
   $size: $shadow-size,
   $blur: $shadow-blur,
-  $pourcent: 15%
+  $pourcent: 25%
 ) {
-  box-shadow: $size $size $blur darken($color, $pourcent);
-}
-
-@mixin backgroundColor($color: $color-white, $pourcent: 0) {
-  background-color: darken($color, $pourcent);
+  box-shadow: 0px $size $blur darken($color, $pourcent);
 }
 
 @mixin flexContent($align: center, $justify: center) {
@@ -24,8 +20,22 @@
   align-items: $align;
 }
 
-@mixin font-body {
-  font-weight: 500;
-  font-size: 0.7rem;
+// Fonts
+@mixin font-body-large($size: 1.1rem) {
+  font-weight: 700;
+  font-size: $size;
 }
 
+@mixin font-body($size: 0.7rem) {
+  font-weight: 600;
+  font-size: $size;
+}
+
+@mixin font-body-small($size: 0.8rem) {
+  font-weight: 300;
+  font-size: $size;
+}
+
+@mixin colorWithBack($backgroundColor) {
+  color: darken($backgroundColor, 50%);
+}

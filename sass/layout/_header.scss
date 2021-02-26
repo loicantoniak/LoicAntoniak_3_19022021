@@ -1,7 +1,7 @@
 header {
     @include flexContent;
-    @include backgroundColor;
-    @include shadow($pourcent: 30%, $blur: 5px);
+    @include shadow($pourcent: 17%, $blur: 5px);
+    background-color: $color-white;
     height: $header-height;  
     position: fixed;  
     top: 0;

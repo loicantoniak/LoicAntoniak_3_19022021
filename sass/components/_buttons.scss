@@ -1,27 +1,53 @@
 .btn {
-  @include shadow;
   @include font-body;
   border: none;
-  padding: $padding-button;
   outline: none;
   cursor: pointer;
+
   &-primary {
+    @include shadow;
     background: linear-gradient(170deg, $color-secondary, $color-primary);
     color: $color-white;
     border-radius: 25px;
+    padding: 0.7rem 1.1rem;
     &:hover {
       background: linear-gradient(
         170deg,
         lighten($color-secondary, 5%),
         lighten($color-primary, 5%)
       );
+      @include shadow($pourcent: 35%);
     }
   }
 
   &-secondary {
-    border-radius: 10px;
+    @include flexContent($justify: start);
+    @include shadow($pourcent: 10%, $blur: 5px);
+    position: relative;
+    background-color: $color-grey1;
+    border-radius: 15px;
+    padding: 1.2rem 0;
+    span {
+      @include flexContent;
+      @include font-body(0.6rem);
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      top: 50;
+      left: -9px;
+      background-color: $color-primary;
+      color: $color-white;
+      border-radius: 50%;
+    }
+    i {
+      @include colorWithBack($color-grey1);
+      margin: 0 1.2rem 0 1.5rem;
+    }
     &:hover {
-      background-color: lighten($color-primary, 35);
+      background-color: lighten($color-primary, 35%);
+      i {
+        @include colorWithBack(lighten($color-primary, 35%));
+      }
     }
   }
 }

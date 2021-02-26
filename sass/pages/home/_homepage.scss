@@ -1,0 +1,43 @@
+.location {
+  @include flexContent;
+  background-color: $color-grey2;
+  padding: $padding-section-small;
+  i {
+    margin-left: -1.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: $color-grey3;
+  }
+  p {
+    @include font-body(0.7rem);
+    margin-left: 0.8rem;
+    color: $color-grey3;
+  }
+}
+
+.presentation {
+  text-align: center;
+  background-color: $color-grey1;
+  .title {
+    @include font-body-large;
+    margin: 0.5rem 1.6rem;
+  }
+  .subtitle {
+    @include font-body-small;
+    color: $color-grey3;
+    margin: 0.7rem 0;
+  }
+  footer {
+    margin: 1.2rem 0;
+  }
+}
+
+.step {
+  .step__container {
+    display: grid;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}
+

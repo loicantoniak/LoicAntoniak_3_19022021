@@ -5,6 +5,11 @@ $color-tertiary: #99e2d0;
 $color-white: #fff;
 $color-text: #000;
 
+
+$color-grey1: #fafafa;
+$color-grey2: #f0f0f0;
+$color-grey3: #595959;
+
 // font
 $text-font: "Roboto";
 $heading-font: "Shrikhand";
@@ -17,13 +22,13 @@ $breakpoints: (
 );
 
 // spacing
-$header-height: 3.5rem;
-$layout-margin: 1rem;
+$header-height: 2.8rem;
+$padding-section: 1.2rem 0.8rem;
+$padding-section-small: 0.8rem;
 
-$shadow-size: 3px;
+$shadow-size: 4px;
 $shadow-blur: 6px;
 
-$padding-button: 0.8rem 1.1rem;
 $large-padding: 2rem;
 $medium-padding: 1.5rem;
 $small-padding: 1.2rem;
