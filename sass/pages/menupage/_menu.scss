@@ -1,0 +1,23 @@
+.menu {
+  margin-top: $header-height + $header-background - 4rem;
+  background-color: $color-grey1;
+  border-radius: 40px 40px 0 0;
+  padding: $padding-section;
+  &-title {
+    @include font-body-small(1.3rem);
+    text-transform: uppercase;
+  }
+}
+
+.restaurant-title {
+  @include flexContent($justify: space-between);
+  margin: 0.5rem 2rem 2rem 0;
+  h1 {
+    @include font-body-small(2.2rem);
+    padding-top: 0.5rem;
+  }
+  i {
+    font-size: 2rem;
+  }
+}
+

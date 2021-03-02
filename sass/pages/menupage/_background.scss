@@ -1,0 +1,12 @@
+.background {
+    width: 100%;
+    position: fixed;
+    top: $header-height;
+    z-index: -1;
+    img {
+        overflow: hidden;
+        width: 100%;
+        height: $header-background;
+        object-fit: cover;
+    }
+}

@@ -12,6 +12,7 @@
 // Components
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/menu-cards";
 
 // Layout
 @import "./layout/header";
@@ -19,6 +20,8 @@
 @import "./layout/footer";
 
 // Pages
-@import "./pages/home/homepage"; 
+@import "./pages/home/homepage";
+@import "./pages//menupage//background";
+@import "./pages//menupage//menu";
 
 // Themes
