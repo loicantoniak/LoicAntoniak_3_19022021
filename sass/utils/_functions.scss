@@ -1,3 +1,11 @@
 /*************************************/
 /*             FUNCTIONS             */
 /*************************************/
+
+$delay: 400ms;
+
+@for $i from 0 through 2 { 
+  .menu__section-#{$i} {
+    animation: fadein 800ms $delay*$i backwards;
+  }
+}

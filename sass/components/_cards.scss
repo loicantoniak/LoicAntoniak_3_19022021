@@ -4,9 +4,10 @@ figure {
   border-radius: 15px;
   margin: 0;
   cursor: pointer;
+  position: relative;
 
   .card__image {
-    height: 14rem;
+    height: 12rem;
     border-radius: 15px 15px 0 0;
     position: relative;
     overflow: hidden;
@@ -16,19 +17,40 @@ figure {
       position: absolute;
     }
   }
+  .card__new {
+    @include flexContent;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    background-color: #99e2d0;
+    z-index: 2;
+    height: 1.8rem;
+    width: 5rem;
+    border-radius: 3px;
+    padding: 0.5rem;
+    p {
+      @include font-body(0.9rem);
+      color: darken($color: $color-tertiary, $amount: 40%);
+    }
+  }
 
   figcaption {
-    height: 5.5rem;
+    height: 5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 1rem;
     line-height: $line-height;
-    .title_card {
-      @include font-body(1.5rem);
+    .card__title{
+      @include font-body-large(1.2rem);
     }
-    .subtitle_card {
-      @include font-body-small;
+    .card__subtitle {
+      @include font-body-small(1.1rem);
+    }
+    i {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      margin-right: 2rem;
     }
   }
 }

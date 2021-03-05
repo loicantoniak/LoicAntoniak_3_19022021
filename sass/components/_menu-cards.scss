@@ -1,15 +1,40 @@
-.dish{
-    @include shadow($size: 1px, $pourcent: 10%, $blur: 13px);
-    background-color: $color-white;
-    border-radius: 15px;
-    margin: 0;
-    padding: 0.8rem;
-    cursor: pointer;
-    &-title {
-        @include font-body(1.5rem);
-        margin-bottom: 0.4rem;
-    }
-    &-subtitle {
-        @include font-body-small(1.3rem);
-    }
+.dish {
+  @include shadow($pourcent: 10%, $blur: 9px, $size: 4px);
+  @include flexContent($justify:start);
+  background-color: $color-white;
+  border-radius: 15px;
+  margin-bottom: 1.3rem;
+  padding: 1rem 0.8rem;
+  cursor: pointer;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+  }
+  &__container {
+    width: 17rem;
+  }
+  &__title {
+    @include font-body-large(1.05rem);
+    margin-bottom: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__accompaniment {
+    @include font-body-small(1rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__price {
+    @include font-body-large(1rem);
+    bottom: 1rem;
+  }
 }

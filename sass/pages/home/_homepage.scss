@@ -3,13 +3,13 @@
   background-color: $color-grey2;
   padding: $padding-section-small;
   i {
-    margin-left: -2rem;
+    margin-left: -1rem;
     margin-bottom: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $color-grey3;
   }
   p {
-    @include font-body(1.2rem);
+    @include font-body(1rem);
     margin-left: 1.2rem;
     color: $color-grey3;
   }
@@ -18,24 +18,26 @@
 .presentation {
   text-align: center;
   background-color: $color-grey1;
-  .title {
+  padding: $padding-section;
+  &__title {
     @include font-body-large;
     margin: 1rem 2rem;
   }
-  .subtitle {
+  &__subtitle {
     @include font-body-small;
     color: $color-grey3;
-    margin: 0.7rem 1.2rem;
+    margin: 0.7rem 0.3rem;
   }
-  .presentation_footer {
+  &__footer {
     margin: 2.2rem 0;
   }
 }
 
 .step {
+  padding: $padding-section;
   .step__container {
     display: grid;
-    margin: 0 0.5rem 4rem 0.5rem;
+    margin: 0 0.5rem 3rem 0.5rem;
     grid-template-columns: 1fr;
     grid-gap: 1.3rem;
   }
@@ -43,11 +45,12 @@
 
 .restaurant {
   background-color: $color-grey1;
+  padding: $padding-section;
   padding-bottom: $header-height;
   .card__container {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-auto-rows: 310px;
+    grid-auto-rows: 281px;
   }
 }

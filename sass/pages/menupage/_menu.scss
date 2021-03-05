@@ -3,21 +3,43 @@
   background-color: $color-grey1;
   border-radius: 40px 40px 0 0;
   padding: $padding-section;
-  &-title {
-    @include font-body-small(1.3rem);
+  &__section {
+    margin-top: 1.6rem;
+  }
+  &__title {
+    @include font-body-small(1rem);
     text-transform: uppercase;
+    margin-bottom: 1.3rem;
+    .underline {
+      border-bottom: 3px solid $color-tertiary;
+      width: 2.8rem;
+      display: inline-block;
+      line-height: 1.85;
+    }
   }
 }
 
-.restaurant-title {
+.restaurant__title {
   @include flexContent($justify: space-between);
-  margin: 0.5rem 2rem 2rem 0;
+  margin: 0.5rem 1rem 0 0;
   h1 {
-    @include font-body-small(2.2rem);
+    @include font-body-small(1.7rem);
     padding-top: 0.5rem;
   }
   i {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
+
+
+@keyframes fadein {
+  from {
+      opacity:0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity:1;
+      transform: translateY(0);
+  }
+}

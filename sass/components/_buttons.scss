@@ -3,13 +3,13 @@
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: 30px;
 
   &-primary {
     @include shadow;
     background: linear-gradient(170deg, $color-secondary, $color-primary);
     color: $color-white;
     padding: 1.2rem 2.3rem;
+    border-radius: 30px;
     &:hover {
       background: linear-gradient(
         170deg,
@@ -22,13 +22,14 @@
 
   &-secondary {
     @include flexContent($justify: start);
-    @include shadow($pourcent: 10%, $blur: 5px);
+    @include shadow($pourcent: 10%, $blur: 9px, $size: 4px);
     position: relative;
     background-color: $color-grey1;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
+    border-radius: 25px;
     span {
       @include flexContent;
-      @include font-body(1rem);
+      @include font-body(0.8rem);
       position: absolute;
       width: 1.7rem;
       height: 1.7rem;
@@ -40,7 +41,7 @@
     }
     i {
       @include colorWithBack($color-grey1);
-      margin: 0 1.7rem 0 2.8rem;
+      margin: 0 1.5rem 0 2.5rem;
     }
     &:hover {
       background-color: lighten($color-primary, 35%);

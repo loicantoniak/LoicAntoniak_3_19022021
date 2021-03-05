@@ -17,7 +17,7 @@
       <img
         src="./public//images//logo//ohmyfood@2x.svg"
         alt="logo de OhMyFood"
-        width="200rem"
+        width="170rem"
       />
     </header>
 
@@ -33,19 +33,24 @@
       <!-- Menu -->
       <div class="menu">
         <!-- title -->
-        <div class="restaurant-title">
+        <div class="restaurant__title">
           <h1>La note enchantée</h1>
           <i class="far fa-heart"></i>
         </div>
 
-        <div>
-          <p class="menu-title">Entrées</p>
-          <div class="dish">
-            <p class="dish-title">Noix de coquilles Saint-Jacques</p>
-            <p class="dish-subtitle">Sur lit de purée de céleri-rave</p>
-          </div>
-        </div>
+        <section class="menu__section menu__section-0">
+          <p class="menu__title">
+            <span class="underline">Entrées</span>
+          </p>
 
+          <aside class="dish">
+            <div class="dish__container">
+              <p class="dish__title">Noix de coquilles Saint-Jacques</p>
+              <p class="dish__accompaniment">Sur lit de purée de céleri-rave</p>
+            </div>
+            <p class="dish__price">40 €</p>
+          </aside>
+        </section>
         <button class="btn btn-primary">Commander</button>
       </div>
     </div>
