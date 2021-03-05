@@ -1,40 +1,65 @@
+$duration: 800ms;
+
 .dish {
   @include shadow($pourcent: 10%, $blur: 9px, $size: 4px);
-  @include flexContent($justify:start);
+  @include flexContent($justify: start, $align: flex-end);
   background-color: $color-white;
   border-radius: 15px;
   margin-bottom: 1.3rem;
   padding: 1rem 0.8rem;
   cursor: pointer;
   position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background-color: $color-tertiary;
-    border-radius: 0 15px 15px 0;
-  }
+  overflow: hidden;
   &__container {
     width: 17rem;
+    transition: width $duration;
   }
   &__title {
-    @include font-body-large(1.05rem);
+    @include font-body-large(1.1rem);
     margin-bottom: 0.4rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   &__accompaniment {
-    @include font-body-small(1rem);
+    @include font-body-small(0.9rem);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   &__price {
     @include font-body-large(1rem);
-    bottom: 1rem;
+  }
+  &__validator {
+    @include flexContent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 65px;
+    background-color: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+    transform: translateX(66px);
+    transition: transform $duration;
+    i {
+      color: $color-white;
+      font-size: 1.5rem;
+    }
+  }
+
+  &:hover > &__validator {
+    transform: translateX(0px);
+    i {
+      animation: spin 600ms;
+    }
+  }
+  &:hover > &__container {
+    width: 14rem;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(720deg);
   }
 }
