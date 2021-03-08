@@ -1,0 +1,55 @@
+$colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+);
+
+.multiSpinner__container {
+  @include flexContent;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  animation: wraploader 0s forwards;
+}
+
+@each $name, $color in $colors {
+  .multiSpinner-#{$name} {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 5px solid transparent;
+    border-top-color: $color;
+    border-radius: 50%;
+    z-index: 99;
+    animation: loader 0s cubic-bezier(0.17, 0.49, 0.96, 0.76) forwards;
+  }
+}
+
+@keyframes wraploader {
+  0% {
+    opacity: 1;
+
+  }
+  99% {
+    opacity: 1;
+    z-index: 99;
+
+  }
+  100% {
+    opacity: 0;
+    z-index: -50;
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+    z-index: -50;
+  }
+}

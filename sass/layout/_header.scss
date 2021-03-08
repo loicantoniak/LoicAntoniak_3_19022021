@@ -6,7 +6,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 10;
+  animation-delay: 3s;
   i {
     position: absolute;
     top: 1.2rem;
