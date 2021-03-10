@@ -11,24 +11,25 @@ $duration: 800ms;
   position: relative;
   overflow: hidden;
   &__container {
-    width: 17rem;
+    width: calc(100% - 35px);
     transition: width $duration;
+  }
+  &__title,
+  &__accompaniment {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__title {
     @include font-body-large(1.1rem);
     margin-bottom: 0.4rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   &__accompaniment {
-    @include font-body-small(0.9rem);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include font-body-small(0.9rem); 
   }
   &__price {
     @include font-body-large(1rem);
+    width: 35px;
   }
   &__validator {
     @include flexContent;
@@ -54,7 +55,7 @@ $duration: 800ms;
     }
   }
   &:hover > &__container {
-    width: 14rem;
+    width: calc(100% - 100px);
   }
 }
 

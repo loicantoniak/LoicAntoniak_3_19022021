@@ -1,14 +1,22 @@
 $delay: 400ms;
 
 .menu {
-  margin-top: $header-height + $header-background - 4rem;
+  margin-top: $header-background;
   background-color: $color-grey1;
   border-radius: 40px 40px 0 0;
   padding: $padding-section;
-  &__section {
+  @include breakpoint(desktop) {
+    margin-top: $header-background + 10rem;
+    padding-bottom: 4rem;
+  }
+  &__container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     margin-top: 1.6rem;
     margin-bottom: 3rem;
   }
+
   &__title {
     @include font-body-small(1rem);
     text-transform: uppercase;
@@ -39,22 +47,19 @@ $delay: 400ms;
   margin-bottom: 3rem;
 }
 
-
-
-@for $i from 0 through 2 { 
+@for $i from 0 through 2 {
   .menu__section-#{$i} {
-    animation: fadein 800ms $delay*$i backwards;
+    animation: fadein 800ms $delay * $i backwards;
   }
 }
 
-
 @keyframes fadein {
   from {
-      opacity:0;
-      transform: translateY(15px);
+    opacity: 0;
+    transform: translateY(15px);
   }
   to {
-      opacity:1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }

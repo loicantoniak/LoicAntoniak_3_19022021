@@ -15,10 +15,23 @@
   }
 }
 
+.presentation-menu__container {
+  @include breakpoint(tablet) {
+    display: flex;
+  }
+}
+
 .presentation {
   text-align: center;
   background-color: $color-grey1;
   padding: $padding-section;
+  @include breakpoint(tablet) {
+    flex: 2;
+    height: auto;
+    @include flexContent;
+    flex-direction: column;
+    background-color: $color-white;
+  }
   &__title {
     @include font-body-large;
     margin: 1rem 2rem;
@@ -35,11 +48,17 @@
 
 .step {
   padding: $padding-section;
+  @include breakpoint(tablet) {
+    flex: 1;
+  }
   .step__container {
     display: grid;
     margin: 0 0.5rem 3rem 0.5rem;
     grid-template-columns: 1fr;
     grid-gap: 1.3rem;
+    @include breakpoint(tablet) {
+      grid-template-columns: minmax(20rem, 25rem);
+    }
   }
 }
 
@@ -50,7 +69,7 @@
   .card__container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     grid-auto-rows: 281px;
   }
 }
