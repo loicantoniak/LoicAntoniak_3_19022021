@@ -39,3 +39,12 @@
 @mixin colorWithBack($backgroundColor) {
   color: darken($backgroundColor, 50%);
 }
+
+@mixin linear-gradient($percentage-color1, $percentage-color2) {
+  background: linear-gradient(
+    to top,
+    $color-primary $percentage-color1,
+    #fff $percentage-color2
+  );
+  -webkit-background-clip: text;
+}

@@ -1,0 +1,40 @@
+.fa-heart {
+  &:hover {
+    font-weight: bold;
+    background: -webkit-linear-gradient(
+      170deg,
+      $color-secondary,
+      $color-primary
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: coloringHeart 0.2s;
+  }
+}
+
+@keyframes coloringHeart {
+  0% {
+    background: transparent;
+  }
+
+  25% {
+    @include linear-gradient(21%, 25%);
+  }
+
+  50% {
+    @include linear-gradient(46%, 50%);
+  }
+
+  75% {
+    @include linear-gradient(71%, 75%);
+  }
+
+  95% {
+    @include linear-gradient(91%, 95%);
+  }
+
+  100% {
+
+    @include linear-gradient(100%, 100%);
+  }
+}
