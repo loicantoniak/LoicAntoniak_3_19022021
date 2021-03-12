@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./public//css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <!-- FontAwesome script -->
     <script src="https://kit.fontawesome.com/90597979dc.js"></script>
     <meta name="description" content="" />
@@ -12,13 +12,11 @@
   </head>
   <body>
     <!-- loader -->
-    <div class="">
+    <div>
       <div class="multiSpinner__container">
         <div class="multiSpinner-primary">
           <div class="multiSpinner-secondary">
-            <div class="multiSpinner-tertiary">
-          
-            </div>
+            <div class="multiSpinner-tertiary"></div>
           </div>
         </div>
       </div>
@@ -29,56 +27,56 @@
       <img
         src="./public/images//logo//ohmyfood@2x.svg"
         alt="logo de OhMyFood"
-        width="170rem"
+        width="170"
       />
     </header>
 
     <div class="container">
       <!-- location -->
-      <section class="location">
+      <div class="location">
         <i class="fas fa-map-marker-alt"></i>
         <p>Paris, Belleville</p>
-      </section>
+      </div>
 
       <div class="presentation-menu__container">
         <!-- presentation -->
-        <section class="presentation">
+        <div class="presentation">
           <p class="presentation__title">Réservez le menu qui vous convient</p>
           <p class="presentation__subtitle">
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
           <div class="presentation__footer">
-            <a href="#restaurant">
-              <button class="btn btn-primary">Explorer nos restaurants</button>
-            </a>
+            <a href="#restaurant" class="btn btn-primary"
+              >Explorer nos restaurants</a
+            >
           </div>
-        </section>
+        </div>
 
         <!-- step menu -->
-        <section class="step">
+        <div class="step">
           <p class="section__title">Fonctionnement</p>
           <div class="step__container">
             <button class="btn btn-secondary">
               <span>1</span>
               <i class="fas fa-mobile-alt fa-lg"></i>
-              <p>Choisissez un restaurant</p>
+              Choisissez un restaurant
             </button>
             <button class="btn btn-secondary">
               <span>2</span>
               <i class="fas fa-list"></i>
-              <p>Composez votre menu</p>
+              Composez votre menu
             </button>
             <button class="btn btn-secondary">
               <span>3</span>
               <i class="fas fa-store"></i>
-              <p>Dégustez au restaurant</p>
+              Dégustez au restaurant
             </button>
           </div>
-        </section>
+        </div>
       </div>
 
       <!-- restaurant -->
-      <section class="restaurant" id="restaurant">
+      <div class="restaurant" id="restaurant">
         <p class="section__title">Restaurants</p>
         <div class="card__container">
           <a href="./lapalettedugout.html">
@@ -156,7 +154,7 @@
             </figure>
           </a>
         </div>
-      </section>
+      </div>
     </div>
     <footer>
       <p class="footer__title">ohmyfood</p>
@@ -169,7 +167,7 @@
         <a href="#">Devenir partenaire</a>
       </div>
       <a href="#">Mentions légales</a>
-      <a href="mailto: ohmyfood@gmail.com">Contact</a>
+      <a href="mailto:ohmyfood@gmail.com">Contact</a>
     </footer>
   </body>
 </html>
