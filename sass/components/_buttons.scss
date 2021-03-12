@@ -21,7 +21,7 @@
   }
 
   &-secondary {
-    @include flexContent($justify: start);
+    @include flexContent($justify: flex-start);
     @include shadow($pourcent: 10%, $blur: 9px, $size: 4px);
     position: relative;
     background-color: $color-grey1;

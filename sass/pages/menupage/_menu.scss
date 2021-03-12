@@ -7,7 +7,6 @@ $delay: 400ms;
   padding: $padding-section;
   @include breakpoint(desktop) {
     margin-top: $header-background + 10rem;
-    padding-bottom: 4rem;
   }
   &__container {
     display: grid;

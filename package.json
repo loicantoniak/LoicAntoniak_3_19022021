@@ -12,6 +12,9 @@
   "license": "ISC",
   "browserslist": "last 4 versions",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.32.8"
   }
 }

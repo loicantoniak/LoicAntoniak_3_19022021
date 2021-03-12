@@ -1,5 +1,5 @@
 footer {
-  @include flexContent($align: start);
+  @include flexContent($align: flex-start);
   background-color: $color-grey4;
   color: $color-white;
   flex-direction: column;

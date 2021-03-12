@@ -2,7 +2,7 @@ $duration: 800ms;
 
 .dish {
   @include shadow($pourcent: 10%, $blur: 9px, $size: 4px);
-  @include flexContent($justify: start, $align: flex-end);
+  @include flexContent($justify: flex-start, $align: flex-end);
   background-color: $color-white;
   border-radius: 15px;
   margin-bottom: 1.3rem;
