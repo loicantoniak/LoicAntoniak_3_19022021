@@ -12,7 +12,7 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 
 ## Fabriqué avec
 
-* [sass](http://materializecss.com) -  préprocesseur CSS (front-end)
+* [sass](https://sass-lang.com/) -  préprocesseur CSS (front-end)
 * [VSCode](https://code.visualstudio.com/) - Editeur de textes
 
 ## Fonctionnalités 
